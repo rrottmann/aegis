@@ -42,7 +42,7 @@ def password2pincode(password=None, length=16):
         logging.error("Invalid length. Must be less than 16 digits.")
         sys.exit(1)
     if len(password) < 7:
-        logging.error("Invalid length. Must be more than 16 digits.")
+        logging.error("Invalid length. Must be more than 7 digits.")
         sys.exit(1)
     pincode = ""
     for _ in password:
